@@ -46,5 +46,9 @@
       ['#projects .projects > .project-card .body','https://github.com/basituzzaman/BloodLagbe']
     ];
     mainProjects.forEach(([selector,url])=>{const container=document.querySelector(selector);if(container)container.insertAdjacentHTML('beforeend',`<a class="project-link" href="${url}" target="_blank" rel="noreferrer">View project ↗</a>`)});
+    const featuredProject=document.querySelector('#projects .featured');
+    if(featuredProject)featuredProject.remove();
+    const otherProjectCards=document.querySelectorAll('.other-projects .other');
+    if(otherProjectCards[3])otherProjectCards[3].remove();
   </script>
 </body></html>
