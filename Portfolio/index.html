@@ -28,7 +28,8 @@
     const previews=[
       ['images/mavric.png','Mavric e-commerce website preview','Mavric','Freelance e-commerce platform delivered for a real client, built around live requirements and deployment.'],
       ['images/techsubflix.png','TechSubFlix subscription platform preview','TechSubFlix','Subscription-based sales website built for a client.'],
-      ['images/library-management.png','Library Management System login screen','Library Management System','Java GUI application for catalog, lending, and library record management.']
+      ['images/library-management.png','Library Management System login screen','Library Management System','Java GUI application for catalog, lending, and library record management.'],
+      ['images/cloud-resource.png','Cloud Resource Allocation Simulator dashboard','OS Resource Allocation Simulator','Operating Systems lab project modelling CPU scheduling, resource allocation, and process logic.']
     ];
     document.querySelectorAll('.other-projects .other').forEach((card,index)=>{const project=previews[index];if(!project)return;card.classList.add('with-image');card.innerHTML=`<img class="other-preview" src="${project[0]}" alt="${project[1]}"><div class="other-content"><h3>${project[2]}</h3><p>${project[3]}</p></div>`});
   </script>
