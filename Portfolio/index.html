@@ -17,6 +17,11 @@
     .section{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:80px;padding-bottom:80px}
     .skills>.wrap,.education>.wrap,.contact>.wrap{width:min(1740px,96%);margin:auto}
     @media(max-width:800px){.hero{min-height:100svh;padding-top:72px;padding-bottom:72px}.section{min-height:100svh;padding-top:64px;padding-bottom:64px}}
+    /* Content-led section rhythm: hero and CTA are bookends; middle sections grow with their content. */
+    .hero{min-height:560px;padding-top:88px;padding-bottom:88px}
+    #about,#skills,#projects,.education{min-height:0;display:block;padding-top:72px;padding-bottom:72px}
+    .contact{min-height:90vh;min-height:90svh;padding-top:90px;padding-bottom:90px}
+    @media(max-width:800px){.hero{min-height:480px;padding-top:64px;padding-bottom:64px}#about,#skills,#projects,.education{min-height:0;padding-top:58px;padding-bottom:58px}.contact{min-height:0;padding-top:76px;padding-bottom:76px}}
   </style>
 </head>
 <body>
